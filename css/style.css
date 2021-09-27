@@ -1,0 +1,335 @@
+@charset "UTF-8";
+@import "../css/bootstrap-reboot.min.css";
+@import "../css/bootstrap-grid.css";
+@import "../css/bootstrap.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+.membership {
+  padding: 56px 0 80px;
+  background-color: #FAFAFA;
+}
+@media screen and (max-width: 767px) {
+  .membership {
+    padding: 24px 0 40px;
+  }
+}
+.membership .title {
+  font-size: 40px;
+  line-height: 47px;
+  color: #162331;
+  font-weight: 700;
+}
+@media screen and (max-width: 767px) {
+  .membership .title {
+    font-size: 37px;
+  }
+}
+.membership .description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0;
+  color: #162331;
+  margin-bottom: 75px;
+}
+@media screen and (max-width: 767px) {
+  .membership .description {
+    margin-bottom: 24px;
+  }
+}
+.membership .card {
+  padding: 32px 24px 40px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  border: none;
+  list-style: none;
+  transition: 0.5s;
+}
+@media screen and (max-width: 767px) {
+  .membership .card {
+    padding: 15px 15px 20px;
+  }
+}
+.membership .card:hover {
+  transform: translateY(-0.6%);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.membership .card:hover.premium {
+  box-shadow: 0 4px 8px #EC9139, 0 0 4px rgba(0, 0, 0, 0.25);
+}
+.membership .card li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  color: #162331;
+  line-height: 19px;
+  margin: 8px 0;
+}
+@media screen and (max-width: 767px) {
+  .membership .card li {
+    margin: 6px 0;
+    font-size: 14px;
+  }
+}
+.membership .card li:first-of-type {
+  padding-bottom: 24px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  border-bottom: 1px solid #DFE1EB;
+  margin: 0;
+}
+.membership .card li:nth-child(2) {
+  position: relative;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 90px;
+  color: #0465C7;
+  padding: 52px 0 48px;
+  margin: 0;
+}
+@media screen and (max-width: 767px) {
+  .membership .card li:nth-child(2) {
+    padding: 25px 0;
+    line-height: 70px;
+  }
+}
+.membership .card li:nth-child(2) sup {
+  font-size: 24px;
+  line-height: 40px;
+  vertical-align: text-top;
+}
+.membership .card li:nth-child(2) sup small {
+  font-size: 24px;
+}
+.membership .card li:nth-child(2) span > small {
+  font-size: 18px;
+  vertical-align: sub;
+  line-height: 100%;
+}
+.membership .card li:nth-child(3) {
+  padding: 0 39px;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 767px) {
+  .membership .card li:nth-child(3) {
+    margin-bottom: 20px;
+    padding: 0;
+  }
+}
+.membership .card li:nth-child(3) .btn {
+  line-height: 46px;
+  text-transform: uppercase;
+  color: #162331;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #162331;
+  border-radius: 8px;
+  padding: 0 15px;
+  width: 100%;
+  transition: 0.3s;
+}
+.membership .card li .additional-text {
+  font-weight: 700;
+}
+.membership .card li .old-price {
+  position: absolute;
+  font-size: 24px;
+  line-height: 28px;
+  color: #EC9139;
+  font-weight: 400;
+  top: 24px;
+  right: 7px;
+}
+.membership .card li .old-price:before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 72.28px;
+  background-color: #EC9139;
+  transform: rotate(-10.78deg);
+  top: 13px;
+  right: -7px;
+}
+.membership .card li .available-icon {
+  width: 16px;
+  height: 16px;
+  background: url("../icons/not_available-icon.svg") center center/cover no-repeat;
+}
+.membership .card.free .btn:hover {
+  background-color: #0465C7;
+  color: white;
+  border-color: transparent;
+}
+.membership .card.premium {
+  box-shadow: 0 0 8px #EC9139, 0 0 4px rgba(0, 0, 0, 0.25);
+}
+.membership .card.premium:before {
+  display: block;
+  content: "save when bid $3,500 or higher";
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: white;
+  line-height: 35px;
+  background-color: #EC9139;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  width: 90%;
+  left: 50%;
+  top: -10px;
+  transform: translateX(-50%);
+  border-radius: 8px 8px 0 0;
+}
+@media screen and (max-width: 767px) {
+  .membership .card.premium:before {
+    line-height: 25px;
+    font-size: 14px;
+  }
+}
+.membership .card.premium li:first-of-type {
+  font-size: 32px;
+  line-height: 37px;
+}
+.membership .card.premium li .btn {
+  background-color: #EC9139;
+  color: white;
+  border-color: transparent;
+}
+.membership .card.premium li .btn:hover {
+  background-color: #e57b15;
+}
+.membership .card.premium li:last-of-type .available-icon {
+  background: url("../icons/not_available-icon.svg") center center/cover no-repeat;
+}
+.membership .card.premium li .available-icon {
+  width: 16px;
+  height: 16px;
+  background: url("../icons/available-icon.svg") center center/cover no-repeat;
+}
+.membership .card.vip li .available-icon {
+  background: url("../icons/available-icon.svg") center center/cover no-repeat;
+}
+.membership .card.vip li .btn {
+  color: white;
+  background: #0465C7;
+  border-color: transparent;
+}
+.membership .card.vip li .btn:hover {
+  background-color: #0351a0;
+}
+
+footer {
+  padding: 40px 0 34px;
+  background-color: #1E1F24;
+}
+footer address {
+  margin: 0;
+}
+footer .footer-contacts {
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 767px) {
+  footer .footer-contacts {
+    margin-bottom: 24px;
+  }
+}
+footer .footer-contacts .footer-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3);
+}
+footer .footer-contacts li {
+  color: white;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 16px;
+}
+footer .footer-contacts li a {
+  color: white;
+  transition: 0.3s;
+  text-decoration: none;
+}
+footer .footer-contacts li a:hover {
+  color: #EC9139;
+}
+footer .footer-contacts .footer_contact-us li:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("../icons/pointer.svg");
+  margin-right: 16px;
+}
+footer .footer-contacts .footer_contact-us li:first-of-type {
+  margin-right: 15px;
+}
+footer .footer-contacts .footer_contact-us li:nth-child(2):before {
+  background: url("../icons/phone.svg");
+}
+footer .footer-contacts .footer_contact-us li:nth-child(3):before {
+  background: url("../icons/mail.svg");
+}
+footer .footer-contacts .footer_contact-us li:nth-child(4):before {
+  background: url("../icons/telegram.svg");
+}
+footer .footer-contacts .social-links li {
+  margin: 0 8px;
+}
+footer .footer-contacts .social-links li:first-of-type {
+  margin: 0 8px 0 0;
+}
+footer .footer-contacts .social-links li:nth-child(2) a:before {
+  content: "";
+}
+footer .footer-contacts .social-links li:last-of-type a:before {
+  content: "";
+}
+footer .footer-contacts .social-links a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  text-decoration: none;
+  line-height: 32px;
+  text-align: center;
+}
+footer .footer-contacts .social-links a:hover {
+  transform: translateY(-10%);
+}
+footer .footer-contacts .social-links a:before {
+  content: "";
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  font-size: 16px;
+}
+footer .footer-copyright span {
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.15);
+}
+footer .footer-copyright a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: 0.3s;
+}
+footer .footer-copyright a:hover {
+  color: #EC9139;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+@media screen and (min-width: 1230px) {
+  .container {
+    max-width: 1230px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

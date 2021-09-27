@@ -1,0 +1,22 @@
+@import "mixin";
+@import "variables";
+@import "libs";
+@import "blocks/membership";
+@import "blocks/footer";
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  @include min-screen(1230px) {
+    max-width: 1230px;
+  }
+}
+
+
+
+
+
+

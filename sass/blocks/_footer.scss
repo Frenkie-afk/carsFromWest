@@ -1,0 +1,121 @@
+footer {
+  padding: 40px 0 34px;
+  background-color: #1E1F24;
+  address {
+    margin: 0;
+  }
+  .footer-contacts {
+    margin-bottom: 80px;
+    @include max-screen(767px) {
+      margin-bottom: 24px;
+    }
+    .footer-title {
+      font-weight: $font_medium;
+      font-size: 14px;
+      line-height: 16px;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.3);;
+    }
+    li {
+      color: $white_color;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      margin-bottom: 16px;
+      a {
+        color: $white_color;
+        transition: .3s;
+        text-decoration: none;
+        &:hover {
+          color: $orange_color;
+        }
+      }
+    }
+    .footer_contact-us {
+      li {
+        &:before {
+          content: "";
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          background: url("../icons/pointer.svg");
+          margin-right: 16px;
+        }
+        &:first-of-type {
+          margin-right: 15px;
+        }
+        &:nth-child(2) {
+          &:before {
+            background: url("../icons/phone.svg");
+          }
+        }
+        &:nth-child(3) {
+          &:before {
+            background: url("../icons/mail.svg");
+          }
+        }
+        &:nth-child(4) {
+          &:before {
+            background: url("../icons/telegram.svg");
+          }
+        }
+      }
+    }
+    .social-links {
+      li {
+        margin: 0 8px;
+        &:first-of-type {
+          margin: 0 8px 0 0;
+        }
+        &:nth-child(2) {
+          a {
+            &:before {
+              content: "\f16d";
+            }
+          }
+        }
+        &:last-of-type {
+          a {
+            &:before {
+              content: "\f167";
+            }
+          }
+        }
+      }
+      a {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        background: hsla(0,0%,100%,.15);
+        border-radius: 8px;
+        text-decoration: none;
+        line-height: 32px;
+        text-align: center;
+        &:hover {
+          transform: translateY(-10%);
+        }
+        &:before {
+          content: "\f39e";
+          font-family: "Font Awesome 5 Brands";
+          font-weight: 400;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .footer-copyright {
+    span {
+      font-size: 12px;
+      line-height: 14px;
+      color: hsla(0,0%,100%,.15);
+    }
+    a {
+      color: hsla(0,0%,100%,.7);
+      text-decoration: none;
+      transition: .3s;
+      &:hover {
+        color: $orange_color;
+      }
+    }
+  }
+}
