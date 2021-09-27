@@ -112,7 +112,7 @@
   margin-top: 0;
   margin-bottom: 40px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
   .membership .card li:nth-child(3) {
     margin-bottom: 20px;
     padding: 0;
@@ -196,9 +196,6 @@
   background-color: #EC9139;
   color: white;
   border-color: transparent;
-}
-.membership .card.premium li .btn:hover {
-  background-color: #e57b15;
 }
 .membership .card.premium li:last-of-type .available-icon {
   background: url("../icons/not_available-icon.svg") center center/cover no-repeat;
