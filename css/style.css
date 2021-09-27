@@ -197,6 +197,9 @@
   color: white;
   border-color: transparent;
 }
+.membership .card.premium li .btn:hover {
+  background-color: #e57b15;
+}
 .membership .card.premium li:last-of-type .available-icon {
   background: url("../icons/not_available-icon.svg") center center/cover no-repeat;
 }

@@ -180,6 +180,9 @@
           background-color: $orange_color;
           color: $white_color;
           border-color: transparent;
+          &:hover {
+            background-color: #e57b15;
+          }
         }
         &:last-of-type {
           .available-icon {
